@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button
+        {
+            display: inline-block;
+        }
+        .button:nth-of-type(1)
+        {
+            display: inline;
+            background-color: blue;
+            color: rgb(225,225,225);
+            border-radius: 4px;
+        }
+        .button:nth-of-type(2)
+        {
+            display:inline;
+            background-color: blue;
+            color:white;
+            border-radius: 4px;
+        }
+        .hidden
+        {
+            display: none;
+        }
+        .container:hover .hidden
+        {
+            display: block;
+        }
+        a
+        {
+            display: block;
+            background-color: blanchedalmond;
+            padding: 20px;
+            border-radius: 4px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hi <span style="display: block;">Hello</span></p>
+    <div class="button">
+        Click Me
+    </div>
+    <div class="button">
+        Button
+    </div>
+    <div class="container">
+        Hover on me
+        <div class="hidden">
+            You can see me
+        </div>
+    </div>
+    <a href="https://www.google.com">Google</a>
+</body>
+</html>
