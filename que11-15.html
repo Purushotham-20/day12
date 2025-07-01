@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent
+        {
+            position: relative;
+            border: 1px solid black;
+            top: 20px;
+            left: 20px;
+        }
+        .child
+        {
+            position: absolute;
+            border: 1px solid black;
+            top: 20px;
+            left: 20px;
+        }
+        button
+        {
+            position: absolute;
+            top: 0%;
+            left: 97%;
+        }
+        .img1,.img2
+        {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+        }
+        .para
+        {
+            position: relative;
+            top: 220px;
+        }
+        .spa
+        {
+            visibility: hidden;
+            position: absolute;
+            bottom: 125%;
+            left: 30px;
+        }
+        .para:hover .spa
+        {
+            visibility: visible;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        This is parent box
+        <div class="child">
+            This is child box
+        </div>
+    </div>
+    <button>X</button>
+    <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70" alt="" height="100px" width="150px" class="img1">
+    <img src="https://as2.ftcdn.net/v2/jpg/05/59/20/99/1000_F_559209912_4Qew7SRpZFYR9sg4kqq2YHxBSQeT0VLg.jpg" alt="" height="90px" width="135px" class="img2">
+    <div class="para">
+        Hover on me
+        <span class="spa">
+        Image of one overlap on another
+        </span>
+    </div>
+</body>
+</html>
