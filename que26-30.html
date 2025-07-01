@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .special
+        {
+            height: 200px;
+            width: 200px;
+        }
+        #box1
+        {
+            background-color: blueviolet;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+        #box2
+        {
+            background-color: violet;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+        #head1
+        {
+            position: sticky;
+            z-index: 6;
+            color: gold;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .container
+        {
+            position: relative;
+            width: 200px;
+            margin-top: 260px;
+            margin-left: 20px;
+        }
+        .container img
+        {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container button
+        {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="special"></div>
+    <div id="box2" class="special"></div>
+    <h3 id="head1">Welcome All</h3>
+    <div class="container">
+        <img src="https://img.freepik.com/premium-photo/happy-notepaper-background-with-empty-space-text_916191-48465.jpg?w=2000" alt="">
+        <button>Welcome</button>
+    </div>
+</body>
+</html>
